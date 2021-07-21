@@ -1,0 +1,30 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.veselroger</groupId>
+    <artifactId>spring-ioc</artifactId>
+    <version>1</version>
+
+    <properties>
+        <maven.compiler.release>14</maven.compiler.release>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.5.2</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <!-- Starters list: https://docs.spring.io/spring-boot/docs/current/reference/html/using.html#using.build-systems.starters -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+    </dependencies>
+</project>
